@@ -36,12 +36,13 @@ OCHRE          - #DB7C26
 <style>
     .nav-link-custom:hover {
         font-weight: bold;
-        background-image: url('assets/images/leaf-icon.png');
+        background-image: url('assets/images/link-hover-icon.png');
+        background-repeat: no-repeat;
         background-position: center;
         }
-</style>
-    <!-- fixed top????? -->         
-    <nav class="navbar navbar-custom navbar-expand-lg bg-body-tertiary fixed-top">
+</style>  
+<!-- NAVBAR -->
+    <nav class="navbar navbar-custom navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-logo " href="index.html"><img src="assets/images/logo.png" class="mx-2"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
@@ -49,7 +50,7 @@ OCHRE          - #DB7C26
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+                <div class="navbar-nav align-content-center">
                     <a class="nav-link active-nav-custom nav-link-custom" aria-current="page" href="index.html">Home</a>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle nav-link-custom" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -68,7 +69,80 @@ OCHRE          - #DB7C26
         </div>
     </nav>
 </header>
+<!-- BODY -->
+<body>
+<div class="row hero-bg m-0 d-flex flex-column "> 
+    <h1 class="index-title m-auto">Phytophiles</h1>
+    <div class="col-md-8 col-sm-12 h-50 mx-auto my-auto">
+        <div class="hero-card card">
+            <div class="hero-text">
+                <h1 class="hero-text1">Cultivate Rarity and Embrace Nature's Exclusives</h1>
+                <h4 class="text-2 fw-bold">Disocver nature's hidden gems!</h4>
+            </div>
+            <button type="button" class="btn button-custom hero-btn mt-2">
+                <a href="products.html" class="shop-now">Shop Now</a>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row d-flex justify-content-around">
+        <div class="col-md-4 mt-5">
+            <h3 class="text-2 fw-bold">About us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aspernatur omnis aperiam nulla reiciendis laboriosam cupiditate delectus. Vero ea accusamus laborum odio ab molestiae, nulla omnis, soluta dignissimos, numquam eligendi?</p>
+        </div>
+        <div class="col-md-4 mt-5">
+            <h3 class="text-2 fw-bold">Our Selection</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aspernatur omnis aperiam nulla reiciendis laboriosam cupiditate delectus. Vero ea accusamus laborum odio ab molestiae, nulla omnis, soluta dignissimos, numquam eligendi?</p>
+        </div>
+        <div class="col-md-4 mb-5 mt-3">
+            <div class="card index-login">
+                <div class="conteiner">
+                    <form method="post">
+                        <h4 class="fw-bolder index-login-title">LOGIN</h4>
+    <!-- USERNAME -->
+                        <div class="form-outline login-outline">
+                            <label class="form-label fw-bold ms-1" for="email">Username</label>
+                            <input type="text" id="email" name="email" class="form-control"
+                                placeholder="Username/Email Address" required minlength="8" maxlength="20"/>
+                        </div>
+    <!-- PASSWORD -->
+                        <div class="form-outline login-outline">                                
+                            <label class="form-label fw-bold ms-1" for="password">Password</label>
+                            <input type="password" id="password" class="form-control" placeholder="Password" required minlength="6"/>
+                                <div class="d-flex justify-content-between">
+    
+                            <a class="text-muted mt-1" href="#">Forgot password?</a>
+                                </div>
+                        </div>
+    <!-- REMEMBER ME -->
+                        <div class="form-check login-outline">
+                                <input class="form-check-input" type="checkbox" value="Remember Me" id="RememberMe">
+                                <label class="form-check-label" for="RememberMe">
+                                Remember me
+                                </label>
+                        </div>
+    <!-- SUBMIT -->
+                        <div type="submit" class="text-center">
+                            <input type="submit" class="button-custom btn fw-bold " value="Sign In">
+                        </div>
+    <!-- REGISTER FOR NEW ACCOUNT -->
+                        <div class="d-flex align-items-center justify-content-center ">
+                            <p class="mb-3 me-2">Don't have an account?</p>
+                            <button type="button" class="btn fa-lg  mb-3">
+                                <a href="registration.html" class="link-button fw-bold">Sign Up</a>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
 
+</footer>
+</body>
 <!-- BOOSTRAP v5.3.2 -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

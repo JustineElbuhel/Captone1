@@ -4,7 +4,66 @@ CAMBRIDGE BLUE - #84B082
 LEAF GREEN     - #82CC55
 VAN DYKE       - #3F2A2B
 TERA POT       - #9D5220 */
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
+html, body {
+font-family: "prata" ;
+height: 100%;
+}
+
+/* INDEX */
+.hero-bg {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://d2r55xnwy6nx47.cloudfront.net/uploads/2020/07/Photosynthesis_2880_Lede.jpg") !important;
+height: 75vh !important;
+background-position: center !important;
+}
+
+.index-title {
+    color: #f5dfb5;
+    text-align: center;
+    font-size: 7vw;
+}
+
+.hero-card {
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(105, 158, 101, 0.5);
+    background-color: rgba(154, 187, 141, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+}
+
+.hero-text1 {
+    color: #f5dfb5;
+    font-size: auto;
+
+}
+
+.text-2 {
+    color:#3F2A2B;
+    margin-top: auto;
+    font-size: auto;
+}
+
+.hero-btn {
+    box-shadow: 0px 15px 25px rgba(38, 43, 38, 0.5);
+    border: #f5dfb5 solid 1.2px;
+    text-decoration: none;
+}
+
+.index-login {
+    background-color:#f3e5cc;
+    border:#3F2A2B ridge 2px;
+    border-radius: 3%;
+}
+
+.index-login-title {
+    text-align: center;
+    margin-top: 1.5rem
+}
+
+.login-outline {
+    margin: 1rem;
+}
 /* NAVBAR */
 .navbar-custom {
 background-color: #84B082 !important;
@@ -19,15 +78,25 @@ text-decoration-color: #3F2A2B !important;
 }
 
 /* CUSTOM BUTTONS & links */
+.shop-now {
+    background-color: #84B082;
+    color:#3F2A2B; 
+    text-decoration: none;
+    font-weight: bold;
+    align-content: center;
+    position: relative;
+}
 .button-custom, .button-custom:hover {
 background-color: #84B082;
-color: #fff !important;
+color:#3F2A2B; 
 }
 
 .button-custom:hover {
 text-decoration: underline;
-text-decoration-color: #fff;
+text-underline-offset: 0.5rem;
+text-decoration-color: #3F2A2B;
 }
+
 .gradient-custom {
 background: linear-gradient(#3F2A2B, #84B082);
 }
