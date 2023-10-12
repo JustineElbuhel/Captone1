@@ -12,21 +12,21 @@ background-color: #84B082 !important;
 
 .active-nav-custom {
 font-weight: bolder;
-color:#9d5220;
+color:#3F2A2B;
 text-decoration: underline !important;
 text-underline-offset: 1rem !important;
-text-decoration-color: #9d5220 !important;
+text-decoration-color: #3F2A2B !important;
 }
 
 /* CUSTOM BUTTONS & links */
 .button-custom, .button-custom:hover {
 background-color: #84B082;
-color: #9d5220 !important;
+color: #fff !important;
 }
 
 .button-custom:hover {
-    text-decoration: underline;
-    text-decoration-color: #9d5220;
+text-decoration: underline;
+text-decoration-color: #fff;
 }
 .gradient-custom {
 background: linear-gradient(#3F2A2B, #84B082);
