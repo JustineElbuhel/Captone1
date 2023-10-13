@@ -28,23 +28,29 @@ OCHRE          - #DB7C26
     
 <!-- LINK CSS STYLESHEET -->
 <link rel="stylesheet" href="css/styles.css">
+<!-- STYLING -->
+<style>
+    .nav-link-custom:hover {
+    font-weight: bold;
+    background-image: url('assets/images/link-hover-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .checkout-body {
+    background-image: url("assets/images/plant-line.jpg");
+    background-position-y: -3%;
+    background-position-x: 53%;
+    width: 100%;
+    height: auto;
+}
+</style>
 </head>
 <body>
 <!-- NAVBAR -->
 <header>
-<!-- NAV:HOVER -->
-<style>
-    .nav-link-custom:hover {
-        font-weight: bold;
-        background-image: url('assets/images/link-hover-icon.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        }
-</style>  
-<!-- NAVBAR -->
     <nav class="navbar navbar-custom navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-logo " href="index.html"><img src="assets/images/logo.png" class="mx-2"></a>
+            <a class="navbar-logo " href="index.html"><img src="assets/images/logo.png" alt="logo" class="mx-2"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -70,7 +76,9 @@ OCHRE          - #DB7C26
     </nav>
 </header>
 <!-- BODY -->
-<body>
+<section>
+<div class="checkout-body">
+<!-- HERO -->
 <div class="row hero-bg m-0 d-flex flex-column "> 
     <h1 class="index-title m-auto">Phytophiles</h1>
     <div class="col-md-8 col-sm-12 h-50 mx-auto my-auto">
@@ -85,17 +93,28 @@ OCHRE          - #DB7C26
         </div>
     </div>
 </div>
+<!-- ABOUT US -->
 <div class="container">
-    <div class="row d-flex justify-content-around">
-        <div class="col-md-4 mt-5">
+    <div class="row d-flex justify-content-between">
+        <div class="col-md-5 mt-5 bg index-card1">
             <h3 class="text-2 fw-bold">About us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aspernatur omnis aperiam nulla reiciendis laboriosam cupiditate delectus. Vero ea accusamus laborum odio ab molestiae, nulla omnis, soluta dignissimos, numquam eligendi?</p>
+            <p class="fw-bold">Phytophiles stands as a unique haven for plant enthusiasts, an oasis fueled by our profound passion for exotic flora. 
+                Nestled in the vibrant heart of San Francisco, we are dedicated to meeting the diverse needs of our community through 
+                a remarkable array of rare and unusual plants. Our aspiration extends beyond simply offering these plants; we are 
+                committed to imparting the wisdom and nurturing guidance required to flourish in the art of expanding your plant collection.</p>
         </div>
-        <div class="col-md-4 mt-5">
+        <div class="col-md-3 mt-5 index-card2">
             <h3 class="text-2 fw-bold">Our Selection</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aspernatur omnis aperiam nulla reiciendis laboriosam cupiditate delectus. Vero ea accusamus laborum odio ab molestiae, nulla omnis, soluta dignissimos, numquam eligendi?</p>
+            <p class="fw-bold">
+                Our inventory is always in flux, as we're committed to offering you the finest rare plants at their peak of health. 
+                Our primary goal is to ensure these plants remain in excellent condition, ready for your adoption. To stay updated on our restocks, 
+                subscribing to our newsletter!</p>
+                <button type="button" class="btn button-custom mt-2">
+                    <a href="registration.html" class="shop-now">Sign up</a>
+                </button>
         </div>
-        <div class="col-md-4 mb-5 mt-3">
+<!-- LOGIN -->
+        <div class="col-md-4 mb-5 mt-5">
             <div class="card index-login">
                 <div class="conteiner">
                     <form method="post">
@@ -124,7 +143,7 @@ OCHRE          - #DB7C26
                         </div>
     <!-- SUBMIT -->
                         <div type="submit" class="text-center">
-                            <input type="submit" class="button-custom btn fw-bold " value="Sign In">
+                            <input type="submit" class="button-custom2 btn " value="Sign In">
                         </div>
     <!-- REGISTER FOR NEW ACCOUNT -->
                         <div class="d-flex align-items-center justify-content-center ">
@@ -139,10 +158,73 @@ OCHRE          - #DB7C26
         </div>
     </div>
 </div>
+<!-- MAP / REVIEW CARDS -->
+<div class="container">
+    <div class="row d-flex justify-content-around">
+        <div class="col-lg-4 col-md-12 col-sm-12 my-5">
+<!-- MAP -->
+            <card class="card img-custom ">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12620.69072696143!2d-122.4074816!3d37.7390929!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e567410f1a1%3A0x2b5087ab64f95ad4!2sFlowercraft!5e0!3m2!1sen!2sus!4v1697215986615!5m2!1sen!2sus"
+                height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="card-body">
+                <table>
+                    <tr>
+                    <td><i class="fas fa-map-marker-alt"></i></td>
+                    <td>
+                        <address>
+                        550 Bayshore Blvd <br>
+                        San Francisco, CA 92124
+                        </address>
+                    </td>
+                    </tr>
+                </table>
+                </div>
+            </card>
+        </div>
+<!-- REVIEWS -->
+        <div class=" col-lg-4 col-md-12 col-sm-12 mt-5 align-self-center">
+            <div class="card review"> 
+                <div class="user-image mx-auto mt-3 mb-2 php2"> 
+                    <img src="assets/images/pfp/pfp2.jpg" alt="profile photo" class="rounded-circle php" width="70" height="70"> 
+                </div>
+                <div class="mx-auto">
+                    <p class="fw-bold text-center">Joseph F.</p>
+                    <p class="text-center m-3 fw-light">' 'Amazing! My plantss are beautiful, and it came with clear instructions on the 
+                        plant care. I definitely will shop here again! Thank you Phytophiles!!' '</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 mb-5 align-self-center">
+            <div class="card review"> 
+                <div class="user-image mx-auto mt-3 mb-2 pfp2"> 
+                    <img src="assets/images/pfp/pfp1.jpg" alt="profile photo" class="rounded-circle php" width="70" height="70"> 
+                </div>
+                <div class="mx-auto">
+                    <p class="fw-bold text-center">Jessica S.</p>
+                    <p class="text-center m-3 fw-light">' 'I had a wonderful conversation with Justine over the phone, and she was incredibly kind
+                        and helpful. I made sure to call the company to confirm the details of my purchase and how it would be shipped. 
+                        The monstera came in beautiful shape"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
 <footer>
-
+<div class="foot">
+    <ul class="nav navbar-custom3 justify-content-center">
+        <li class="nav-item active">
+        <a class="nav-link navbar-custom3" href="index.html">Home </a>
+        </li>
+        <li>
+            <a class="nav-link navbar-custom3" href="#">Contact Us</a>
+        </li>
+    </ul>
+    <p class="navbar-custom3  copyright">Copyright &#169; 2023 J. Elbuhel. All Rights Reserved.</p>
+</div>
 </footer>
-</body>
 <!-- BOOSTRAP v5.3.2 -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

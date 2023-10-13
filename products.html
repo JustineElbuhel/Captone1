@@ -26,18 +26,27 @@ OCHRE          - #DB7C26
 
     <!-- LINK CSS STYLESHEET -->
     <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-<!-- NAVBAR -->
-<header>
-<!-- NAV:HOVER -->
+<!-- STYLING -->
 <style>
-    .nav-link-custom:hover {
+    .nav-link-custom:hover { 
         font-weight: bold;
-        background-image: url('assets/images/link-hover-icon.png'); background-repeat: no-repeat;
+        background-image: url('assets/images/link-hover-icon.png');
+        background-repeat: no-repeat;
         background-position: center;
         }
+        .checkout-body {
+        background-image: url("assets/images/plant-line.jpg");
+        background-position-y: center;
+        background-position-x: 34%;
+        width: 100%;
+        height: auto;
+        }    
 </style>
+</head>
+<body>
+<header>
+
+<!-- NAVBAR -->
     <nav class="navbar navbar-custom navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-logo " href="index.html"><img src="assets/images/logo.png" class="mx-2"></a>
@@ -67,58 +76,146 @@ OCHRE          - #DB7C26
 </header>
 <!-- PRODUCTS MAIN CONTENT -->
 <main>
-<h1 class="text-center">Shop Now</h1>
+<div class="checkout-body">
+
+<h1 class="text-center mx-5 p-5 text-2 fw-bold">Our Flora</h1>
+
 <!-- PRODUCT CARDS -->
-    <div class="container">
-        <div class="row d-flex justify-content-around">
+    <div class="container ">
+        <div class="row ">
             <!-- Card 1 -->
-            <div class="card m-0" style="width: 18rem;">
-                <img class="card-img-top object-fit-cover" src="assets/images/plants/Monstera-albo.png" alt="Monstera">
-                <div class="card-body">
-                <h5 class="card-title">Monstera Albo Borsigiana</h5>
-                <h6 class="card-subtitle d-flex justify-content-center mb-3 fw-lighter"><em>$60 - $120</em></h6>
-                    <div class="d-flex justify-content-center">
-                        <a href="#" class="btn button-custom fw-bold">Add to cart</a>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top img-custom" src="assets/images/plants/monstera-albo.jpeg" alt="Monstera">
+                    <div class="card-body">
+                    <h5 class="card-title">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                            Variegated Monstera Albo
+                            </div>
+                        <div class="fw-bold"><em>$479</em></div>
+                    </h5>
+                    <h6 class="card-subtitle mb-3 fw-lighter"><em>Monstera Albo Borsigiana</em></h6>
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="btn button-custom fw-bold">Add to cart</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Card 2 -->
-            <div class="card m-0" style="width: 18rem;">
-                <img class="card-img-top object-fit-cover" src="assets/images/plants/Monstera-albo.png" alt="Monstera">
-                <div class="card-body">
-                <h5 class="card-title">Monstera Albo Borsigiana</h5>
-                <h6 class="card-subtitle d-flex justify-content-center mb-3 fw-lighter"><em>$60 - $120</em></h6>
-                    <div class="d-flex justify-content-center">
-                        <a href="#" class="btn button-custom fw-bold">Add to cart</a>
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top img-custom" src="assets/images/plants/musa-aeae.png" alt="Musa Aeae">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                Sacred Banana
+                                </div>
+                            <div class="fw-bold"><em>$299</em></div>
+                        </h5>
+                        <h6 class="card-subtitle mb-3 fw-lighter"><em>Musa Ae Ae</em></h6>
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="btn button-custom fw-bold">Add to cart</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Card 3 -->
-            <div class="card m-0" style="width: 18rem;">
-                <img class="card-img-top object-fit-cover" src="assets/images/plants/Monstera-albo.png" alt="Monstera">
-                <div class="card-body">
-                <h5 class="card-title">Monstera Albo Borsigiana</h5>
-                <h6 class="card-subtitle d-flex justify-content-center mb-3 fw-lighter"><em>$60 - $120</em></h6>
-                    <div class="d-flex justify-content-center">
-                        <a href="#" class="btn button-custom fw-bold">Add to cart</a>
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top img-custom" src="assets/images/plants/monstera-obliqua-peruvian.png" alt="Monstera">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                Monstera Peru
+                                </div>
+                            <div class="fw-bold"><em>$439</em></div>
+                        </h5>
+                        <h6 class="card-subtitle mb-3 fw-lighter"><em>Monstera Obliqua Peruvian Form</em></h6>
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="btn button-custom fw-bold">Add to cart</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Card 4 -->
-            <div class="card m-0" style="width: 18rem;">
-                <img class="card-img-top object-fit-cover" src="assets/images/plants/Monstera-albo.png" alt="Monstera">
-                <div class="card-body">
-                <h5 class="card-title">Monstera Albo Borsigiana</h5>
-                <h6 class="card-subtitle d-flex justify-content-center mb-3 fw-lighter"><em>$60 - $120</em></h6>
-                    <div class="d-flex justify-content-center">
-                        <a href="#" class="btn button-custom fw-bold">Add to cart</a>
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top img-custom" src="assets/images/plants/anthurium-warocquanum.png" alt="Monstera">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                Queen Anthurium
+                                </div>
+                            <div class="fw-bold"><em>$249</em></div>
+                        </h5>
+                        <h6 class="card-subtitle mb-3 fw-lighter"><em>Anthurium Warocqueaum</em></h6>
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="btn button-custom fw-bold">Add to cart</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top img-custom" src="assets/images/plants/aglaonema-pictum-tricolor.jpg" alt="Monstera">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                Chinese Evergreen
+                                </div>
+                            <div class="fw-bold"><em>$179</em></div>
+                        </h5>
+                        <h6 class="card-subtitle mb-3 fw-lighter"><em>Aglaonema Tricolor Pictum</em></h6>
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="btn button-custom fw-bold">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top img-custom" src="assets/images/plants/pink-pincess-pilodendron.png" alt="Monstera">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                Pink Princess
+                                </div>
+                            <div class="fw-bold"><em>$549</em></div>
+                        </h5>
+                        <h6 class="card-subtitle mb-3 fw-lighter"><em>Philodendron Erubescens</em></h6>
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="btn button-custom fw-bold">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
-
+</div>
 </main>
+<!-- FOOTER -->
+<footer>
+    <div class="foot">
+        <ul class="nav navbar-custom3 justify-content-center">
+            <li class="nav-item active">
+            <a class="nav-link navbar-custom3" href="index.html">Home </a>
+            </li>
+            <li>
+                <a class="nav-link navbar-custom3" href="#">Contact Us</a>
+            </li>
+        </ul>
+        <p class="navbar-custom3  copyright">Copyright &#169; 2023 J. Elbuhel. All Rights Reserved.</p>
+    </div>
+    </footer>
 <!-- BOOSTRAP v5.3.2 -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

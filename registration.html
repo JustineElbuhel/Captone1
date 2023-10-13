@@ -27,25 +27,29 @@ OCHRE          - #DB7C26
 
     <!-- LINK CSS STYLESHEET -->
         <link rel="stylesheet" href="css/styles.css">
+<!-- STYLING -->
+    <style>
+    .nav-link-custom:hover {
+        font-weight: bold;
+        background-image: url('assets/images/link-hover-icon.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        }
+        
+        /* BACKGROUND IMAGE */
+        .checkout-body {
+            background-image: url("assets/images/plant-line.jpg");
+            background-position-y: center;
+            background-position-x: 34%;
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
 <!-- NAVBAR -->
 <header>
-<!-- NAV:HOVER -->
-    <style>
-        .nav-link-custom:hover {
-            font-weight: bold;
-            background-image: url('assets/images/leaf-icon.png');
-            background-position: center;
-            }
-        
-            /* BACKGROUND IMAGE */
-        body {
-        background-image: url('https://cdn.hovia.com/app/uploads/Green-Tropical-Plant-Wallpaper-Mural-Plain.jpg');
-        background-image: center;
-        background-repeat: repeat;
-        }
-    </style>
+
     <nav class="navbar navbar-custom navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-logo " href="index.html"><img src="assets/images/logo.png" class="mx-2"></a>
@@ -76,7 +80,8 @@ OCHRE          - #DB7C26
 </header>
 
 <!-- REGISTRATION CONTENT -->
-<section class="gradient-form" style="background-image: url('https://cdn.hovia.com/app/uploads/Green-Tropical-Plant-Wallpaper-Mural-Plain.jpg'); background-position: center;">
+<section>
+    <div class="checkout-body">
     <div class="container py-3 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-xl-10">
@@ -89,26 +94,41 @@ OCHRE          - #DB7C26
                                 </div>
 <!-- REGISTRATION FORM -->
                                     <form method="post">
-<!-- FIRST/LAST NAME -->
-                                        <div class="form-outline mb-4 d-flex justify-content-lg-around">
-                                            <input type="text" id="firstname" class="form-control form-control-lg m-1" placeholder="First Name" required minlength="1" />
-                                            <input type="text" id="lastname" class="form-control form-control-lg m-1" placeholder="Last Name" required minlength="1"/>
-                                        </div>
+                                        <!-- FIRST/LAST NAME -->
+                                        <div class="row mb-4">
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label ms-2 fw-bold" for="firstname">First name</label>
+                                                    <input type="text" id="firstname" class="form-control" placeholder="First Name" required minlength="2"/>
+
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <label class="form-label ms-2 fw-bold" for="lastname">Last name</label>
+                                                    <input type="text" id="lastname" class="form-control" placeholder="Last Name" required minlength="2" />                               
+                                                </div>
+                                            </div>
+                                        </div> 
 <!-- EMAIL -->
                                         <div class="form-outline mb-4">
-                                            <input type="email" id="email" class="form-control form-control-lg m-1" placeholder="Email" required/>
+                                            <label class="form-label ms-2 fw-bold" for="email">Email</label>
+                                            <input type="email" id="email" class="form-control" placeholder="Email" required/>
                                         </div>
 <!-- USERNAME -->
                                         <div class="form-outline mb-4">
-                                            <input type="text" id="username" class="form-control form-control-lg m-1" placeholder="Username" required minlength="8"/>
+                                            <label class="form-label ms-2 fw-bold" for="username">Username</label>
+                                            <input type="email" id="username" class="form-control" placeholder="Username" required/>
                                         </div>
 <!-- PASSWORD -->
                                         <div class="form-outline mb-4">
-                                            <input type="password" id="password" class="form-control form-control-lg m-1" placeholder="Password" required minlength="8"/>
+                                            <label class="form-label ms-2 fw-bold" for="password">Password</label>
+                                            <input type="password" id="password" class="form-control" placeholder="Password" required/>
                                         </div>
 <!-- CONFIRM PASSWORD -->
                                         <div class="form-outline mb-4">
-                                            <input type="password" id="confrim-password" class="form-control form-control-lg m-1" placeholder="Confirm password" required minlength="8"/>
+                                            <label class="form-label ms-2 fw-bold" for="confirm-password">Confirm password</label>
+                                            <input type="password" id="confirm-password" class="form-control" placeholder="Confirm password" required minlength="8"/>
                                         </div>
 <!-- HOW DID YOU HEAR ABOUT US? -->
                                         <p class="fw-bold ms-1">How did you hear about us? Check all that apply</p>
@@ -142,8 +162,15 @@ OCHRE          - #DB7C26
                                             Other
                                             </label>
                                         </div>
-<!-- TERM & AGREEMENT CHECKBOX -->
-                                        <div class="form-check d-flex justify-content-center my-4">
+<!-- NEWSLETTER -->
+                                        <div class="form-check d-flex justify-content-center mt-4 mb-1">
+                                        <input class="form-check-input me-2" type="checkbox" value="" id="newsletter" required/>
+                                        <label class="form-check-label" for="newsletter">
+                                            Subscribe to our Newsletter
+                                        </label>
+                                        </div>
+<!-- TERMS AND AGREEMENTS -->
+                                        <div class="form-check d-flex justify-content-center mb-4">
                                         <input class="form-check-input me-2" type="checkbox" value="" id="terms" required/>
                                         <label class="form-check-label" for="terms">
                                             I agree to all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
@@ -155,17 +182,17 @@ OCHRE          - #DB7C26
                                             class="btn button-custom fw-bold btn-block btn-lg gradient-custom-4 text-body">Register</button>
                                         </div>
 <!-- LOGIN TO EXISTING ACCOUNT -->
-                                        <p class="text-center text-muted my-3">Have already an account? <a href="login.html"
+                                        <p class="text-center text-muted my-4">Have already an account? <a href="login.html"
                                             class="text-body link-button fw-bold"><u>Login here</u></a></p>
                                     </form>
                                 </div>
                             </div>
 <!-- GRADIENT BACKGROUND AND PHYTOPHILE DEFINITION -->
-                            <div class="col-lg-6 d-flex align-items-center gradient-custom">
-                                <div class="text-light px-3 py-4 p-md-5 mx-md-4">
-                                <h2 class="mb-4">Phy·to·phile</h2>
-                                <h4> /faɪˈtəʊˈfaɪl/</h4>
-                                <p class="small mb-0"><em>Phyto</em> comes from the Greek 'phytón' meaning “plant”. <br><em>Phile</em> comes from Greek 'philos'
+                            <div class="col-lg-6 d-flex align-items-top gradient-custom">
+                                <div class="text-light px-3 py-4 p-md-5 mx-md-4 position-fixed">
+                                <h2 class="mb-4 text-3">Phy·to·phile</h2>
+                                <h4 class="text-3"> /faɪˈtəʊˈfaɪl/</h4>
+                                <p class="small mb-0 text-3"><em>Phyto</em> comes from the Greek 'phytón' meaning “plant”. <br><em>Phile</em> comes from Greek 'philos'
                                     meaning “dear, beloved”. <br>Someone with a love or affinity for plants.</p>
                             </div>
                         </div>
@@ -174,7 +201,22 @@ OCHRE          - #DB7C26
             </div>
         </div>
     </div>
+    </div>
 </section>
+<!-- FOOTER -->
+<footer>
+    <div class="foot">
+        <ul class="nav navbar-custom3 justify-content-center">
+            <li class="nav-item active">
+            <a class="nav-link navbar-custom3" href="index.html">Home </a>
+            </li>
+            <li>
+                <a class="nav-link navbar-custom3" href="#">Contact Us</a>
+            </li>
+        </ul>
+        <p class="navbar-custom3  copyright">Copyright &#169; 2023 J. Elbuhel. All Rights Reserved.</p>
+    </div>
+    </footer>
 <!-- BOOSTRAP v5.3.2 -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
