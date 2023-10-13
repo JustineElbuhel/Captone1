@@ -1,7 +1,7 @@
 # Phytophiles Plant Shop
 E-commerce Website
 
-One paragraph of project description goes here.
+This is meant to be a usable e-commerce site for a rare plant shop. It allows customers to easily navigate through site, aiming to catch their attention to shop and give their loyalty to this hop. It contains an index with a hero banner, registration page, login page, a product page, and a checkout page. It was built using HTML, CSS, and various elements from Bootstrap version 5.3.2. 
 
 
 ### Prerequisites
