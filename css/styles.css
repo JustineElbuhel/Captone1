@@ -151,7 +151,7 @@ color: #9d5220 !important;
 
 /* REGISTRATION */
 .text-3 {
-color:#f5dfb5
+color:#f5dfb5;
 }
 
 /* PRODUCTS */
@@ -173,13 +173,13 @@ color: #3F2A2B;
 }
 
 .navbar-custom2 {
-    background-color: #3F2A2B;
-    color: #f0f0f0;
+    background-color: #f5dfb5;
+    color: #3F2A2B;
 }
 
 .button-custom2 {
-    background-color: #3F2A2B !important;
-    color: #f0f0f0 !important;
+    background-color: #f5dfb5  !important;
+    color: #3F2A2B!important;
 }
 
 .button-custom2:hover {
