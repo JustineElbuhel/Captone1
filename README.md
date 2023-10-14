@@ -27,17 +27,25 @@ Knowledge of HTML / CSS / Bootstrap
 
 ## HTML
 **Index**
-![Index](<127.0.0.1_5500_index.html (1).png>)
-**Products**
-![Products](127.0.0.1_5500_products.html.png)
-**Login**
-![Login](127.0.0.1_5500_login.html.png)
-**Registration**
-![Registration](127.0.0.1_5500_registration.html.png)
-**Checkout**
-![Checkout](127.0.0.1_5500_checkout.html.png)
+![Index](assets/images/ReadMePhotos/rmindex.png)
 
-## Code Snippet
+**Products**
+
+![Products](assets/images/ReadMePhotos/rmproducts.png)
+**Login**
+
+
+![Login](assets/images/ReadMePhotos/rmlogin.png)
+
+**Registration**
+
+![Registration](assets/images/ReadMePhotos/rmreg.png)
+
+**Checkout**
+
+![Checkout](assets/images/ReadMePhotos/rmcheckout.png)
+
+## Code Highlight
 **Fixed Position**
 
 I wanted my definition to stay on the users page, even after they scroll past where it starts upon loading. by uing postion-fixed within bootstrap (as seen below in the first div tag), that element will stay in the same position when you scroll up/down on the page.
@@ -53,8 +61,14 @@ I wanted my definition to stay on the users page, even after they scroll past wh
     </div>
 
 The images below display the Phytophile definition in the same position in different viewing positions.
-![Fixed 1](gcode1.png)
-![Fixed 2](gcode2.png)
+
+**Exhibit A**
+
+![Fixed poistion image](assets/images/ReadMePhotos/gcode1.png)
+
+**Exhibit B**
+
+![Fixed position immage 2](assets/images/ReadMePhotos/gcode2.png)
 
 
 ## Deployed Link

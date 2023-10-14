@@ -49,30 +49,32 @@ OCHRE          - #DB7C26
 <body>
 <!-- NAVBAR -->
 <header>
-
     <nav class="navbar navbar-custom navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-logo " href="index.html"><img src="assets/images/logo.png" class="mx-2"></a>
+            <a class="navbar-logo " href="index.html"><img src="assets/images/logo.png" alt="logo" class="mx-2"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link nav-link-custom" aria-current="page" href="index.html">Home</a>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active-nav-custom dropdown-toggle nav-link-custom" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Account
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="login.html">Login</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="registration.html">Sign Up</a></li>
-                        </ul>
-                    </li>
+                    <a class="nav-link nav-link-custom nav-title" aria-current="page" href="index.html">Phytophiles</a>
+                    <div>
+                        <ul class="account">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link-custom" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item active-nav-custom" href="registration.html">Sign Up</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
                     <a class="nav-link nav-link-custom" href="products.html">Our Plants</a>
-                    <a class="nav-link nav-link-custom " href="checkout.html">Checkout</a>
-                    
+                    <a class="nav-link nav-link-custom " href="checkout.html">Checkout</a>    
                 </div>
             </div>
         </div>
@@ -99,65 +101,65 @@ OCHRE          - #DB7C26
                                             <div class="col">
                                                 <div class="form-outline">
                                                     <label class="form-label ms-2 fw-bold" for="firstname">First name</label>
-                                                    <input type="text" id="firstname" class="form-control" placeholder="First Name" required minlength="2"/>
+                                                    <input type="text" id="firstname" class="form-control" placeholder="First Name" required minlength="2"  autocomplete="off"/>
 
                                                 </div>
                                             </div>
                                             <div class="col">
                                                 <div class="form-outline">
                                                     <label class="form-label ms-2 fw-bold" for="lastname">Last name</label>
-                                                    <input type="text" id="lastname" class="form-control" placeholder="Last Name" required minlength="2" />                               
+                                                    <input type="text" id="lastname" class="form-control" placeholder="Last Name" required minlength="2" autocomplete="off" />                               
                                                 </div>
                                             </div>
                                         </div> 
 <!-- EMAIL -->
                                         <div class="form-outline mb-4">
                                             <label class="form-label ms-2 fw-bold" for="email">Email</label>
-                                            <input type="email" id="email" class="form-control" placeholder="Email" required/>
+                                            <input type="email" id="email" class="form-control" placeholder="Email" required autocomplete="off"/>
                                         </div>
 <!-- USERNAME -->
                                         <div class="form-outline mb-4">
                                             <label class="form-label ms-2 fw-bold" for="username">Username</label>
-                                            <input type="email" id="username" class="form-control" placeholder="Username" required/>
+                                            <input type="email" id="username" class="form-control" placeholder="Username" required autocomplete="off"/>
                                         </div>
 <!-- PASSWORD -->
                                         <div class="form-outline mb-4">
                                             <label class="form-label ms-2 fw-bold" for="password">Password</label>
-                                            <input type="password" id="password" class="form-control" placeholder="Password" required/>
+                                            <input type="password" id="password" class="form-control" placeholder="Password" required autocomplete="off"/>
                                         </div>
 <!-- CONFIRM PASSWORD -->
                                         <div class="form-outline mb-4">
                                             <label class="form-label ms-2 fw-bold" for="confirm-password">Confirm password</label>
-                                            <input type="password" id="confirm-password" class="form-control" placeholder="Confirm password" required minlength="8"/>
+                                            <input type="password" id="confirm-password" class="form-control" placeholder="Confirm password" required minlength="8" autocomplete="off"/>
                                         </div>
 <!-- HOW DID YOU HEAR ABOUT US? -->
                                         <p class="fw-bold ms-1">How did you hear about us? Check all that apply</p>
                                         <div class="form-check ms-1">
-                                            <input class="form-check-input" type="radio" name="google" id="google" value="option1">
+                                            <input class="form-check-input" type="radio" name="google" id="google" value="option1" autocomplete="off">
                                             <label class="form-check-label" for="google">
                                             Google
                                             </label>
                                         </div>
                                         <div class="form-check ms-1">
-                                            <input class="form-check-input" type="radio" name="social" id="social" value="option2">
+                                            <input class="form-check-input" type="radio" name="social" id="social" value="option2" autocomplete="off">
                                             <label class="form-check-label" for="social">
                                             Social Media
                                             </label>
                                         </div>    
                                         <div class="form-check ms-1">
-                                            <input class="form-check-input" type="radio" name="associates" id="associates" value="option3">
+                                            <input class="form-check-input" type="radio" name="associates" id="associates" value="option3" autocomplete="off">
                                             <label class="form-check-label" for="associates">
                                             Family/Friends
                                             </label>
                                         </div>
                                         <div class="form-check ms-1">
-                                            <input class="form-check-input" type="radio" name="farmers" id="farmers" value="option4">
+                                            <input class="form-check-input" type="radio" name="farmers" id="farmers" value="option4" autocomplete="off">
                                             <label class="form-check-label" for="farmers">
                                             Farmers Market
                                             </label>
                                         </div>
                                         <div class="form-check ms-1">
-                                            <input class="form-check-input" type="radio" name="other" id="other" value="option5">
+                                            <input class="form-check-input" type="radio" name="other" id="other" value="option5" autocomplete="off">
                                             <label class="form-check-label" for="other">
                                             Other
                                             </label>

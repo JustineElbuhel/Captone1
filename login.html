@@ -48,28 +48,33 @@ OCHRE          - #DB7C26
 
 <!-- NAVBAR -->
 <header>
+
     <nav class="navbar navbar-custom navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-logo " href="index.html"><img src="assets/images/logo.png" class="mx-2"></a>
+            <a class="navbar-logo " href="index.html"><img src="assets/images/logo.png" alt="logo" class="mx-2"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link nav-link-custom" aria-current="page" href="index.html">Home</a>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active-nav-custom dropdown-toggle nav-link-custom" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Account
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="login.html">Login</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="registration.html">Sign Up</a></li>
-                        </ul>
-                    </li>
+                    <a class="nav-link nav-link-custom nav-title" aria-current="page" href="index.html">Phytophiles</a>
+                    <div>
+                        <ul class="account">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link-custom" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active-nav-custom" href="login.html">Login</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="registration.html">Sign Up</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
                     <a class="nav-link nav-link-custom" href="products.html">Our Plants</a>
-                    <a class="nav-link nav-link-custom " href="checkout.html">Checkout</a>
+                    <a class="nav-link nav-link-custom " href="checkout.html">Checkout</a>    
                 </div>
             </div>
         </div>
@@ -96,13 +101,13 @@ OCHRE          - #DB7C26
                                 <div class="form-outline mb-4">
                                     <label class="form-label ms-1 fw-bold" for="email">Username</label>
                                     <input type="text" id="email" name="email" class="form-control"
-                                        placeholder="Username/Email Address" required minlength="8" maxlength="20"/>
+                                        placeholder="Username/Email Address" required minlength="8" maxlength="20" autocomplete="off"/>
                                     
                                 </div>
 <!-- PASSWORD -->
                                 <div class="form-outline">
                                     <label class="form-label ms-1 fw-bold" for="password">Pasword</label>
-                                    <input type="password" id="password" class="form-control" placeholder="Password" required minlength="6"/>
+                                    <input type="password" id="password" class="form-control" placeholder="Password" required minlength="6" autocomplete="off"/>
                                     <div class="d-flex justify-content-between">
                                         <!-- REMEMBER ME -->
                                         <div class="form-check">
@@ -116,15 +121,15 @@ OCHRE          - #DB7C26
                                 </div>
 
 <!-- SUBMIT -->
-                                <div type="submit" class="text-center">
+                                <div class="text-center">
                                     <input type="submit" class="button-custom btn fw-bold mb-5 mt-3" value="Sign In">
                                 </div>
 <!-- REGISTER FOR NEW ACCOUNT -->
                                 <div class="d-flex align-items-center justify-content-center pb-4">
                                     <p class="mb-3 me-2">Don't have an account?</p>
-                                    <button type="button" class="btn fa-lg  mb-3">
-                                        <a href="registration.html" class="link-button fw-bold">Sign Up</a>
-                                    </button>
+                                    <a href="registration.html" class="btn fa-lg  mb-3 link-button fw-bold">
+                                    Sign Up
+                                    </a>
                                 </div>
                             </form>
                             </div>
@@ -134,7 +139,6 @@ OCHRE          - #DB7C26
             </div>
         </div>
     </div>
-</div>
 </section>
 <!-- FOOTER -->
 <footer>

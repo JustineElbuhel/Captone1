@@ -59,17 +59,21 @@ OCHRE          - #DB7C26
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link nav-link-custom" aria-current="page" href="index.html">Home</a>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle nav-link-custom" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Account
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="login.html">Login</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="registration.html">Sign Up</a></li>
-                        </ul>
-                    </li>
+                    <a class="nav-link nav-link-custom nav-title" aria-current="page" href="index.html">Phytophiles</a>
+                    <div>
+                        <ul class="account">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link-custom" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="registration.html">Sign Up</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
                     <a class="nav-link nav-link-custom" href="products.html">Our Plants</a>
                     <a class="nav-link active-nav-custom nav-link-custom " href="checkout.html">Checkout</a>    
                 </div>
@@ -115,19 +119,19 @@ OCHRE          - #DB7C26
                     <!-- EMAIL -->
                     <div class="form-outline mb-4">
                         <label class="form-label ms-2 fw-bold" for="email">Email</label>
-                        <input type="email" id="email" class="form-control" placeholder="Email" required/>
+                        <input type="email" id="email" class="form-control" placeholder="Email" required autocomplete="off"/>
                     </div>
 
                     <!-- ADDRESS -->
                     <div class="form-outline mb-4">
                         <label class="form-label ms-2 fw-bold" for="address">Address </label>
-                        <input type="text" id="address" class="form-control" placeholder="Address" required/>
+                        <input type="text" id="address" class="form-control" placeholder="Address" required autocomplete="off"/>
                     </div>
 
                     <!-- ADDRESS 2 -->
                     <div class="form-outline mb-4">
                         <label class="form-label ms-2 fw-bold" for="address2">Address 2 <span class="fw-light"> (Optional)</span></label>
-                        <input type="email" id="address2" class="form-control" placeholder="apt/suite"/>
+                        <input type="text" id="address2" class="form-control" placeholder="apt/suite"/>
                     </div>
 
                     <div class="row">
@@ -190,7 +194,7 @@ OCHRE          - #DB7C26
                         </div>
                         <div class="col-md-5">
                             <label class="form-label ms-2 fw-bold" for="zipcode1">Zipcode</label>
-                            <input type="text" id="zipcode1" class="form-control" placeholder="Zipcode" required minlength="5"/>
+                            <input type="text" id="zipcode1" class="form-control" placeholder="Zipcode" required minlength="5"  autocomplete="off"/>
                         </div>
                     </div>
                     <!-- ADDITIONAL DELIVERY INSTRUCTIONS -->
@@ -233,7 +237,7 @@ OCHRE          - #DB7C26
                 <!-- ADDRESS 2 -->
                 <div class="form-outline mb-4">
                     <label class="form-label ms-2 fw-bold" for="1address2">Address 2 <span class="fw-light"> (Optional)</span></label>
-                    <input type="email" id="1address2" class="form-control" placeholder="apt/suite"/>
+                    <input type="email" id="1address2" class="form-control" placeholder="apt/suite" autocomplete="off"/>
                 </div>
 
                 <div class="row">
@@ -323,7 +327,7 @@ OCHRE          - #DB7C26
 
                 <div class="row">
                     <div class="col-md-4 mb-3">
-                        <label class="form-label ms-2 fw-bold" for="state">Expiration</label>
+                        <label class="form-label ms-2 fw-bold" for="state">Expiration Month</label>
                         <select class="form-select" aria-label="Default select example" id="state">
                             <option value="select">Select</option>
                             <option value='January'>01</option>
@@ -341,6 +345,7 @@ OCHRE          - #DB7C26
                         </select>
                     </div>
                     <div class="col-md-3 col-sm-12 mb-4">
+                        <label class="form-label ms-2 fw-bold" for="state">Expiration Year</label>
                         <input type="text" id="year" class="form-control" placeholder="Year" required minlength="4" maxlength="4"/>
                     </div>
                     <div class="col-md-2 col-sm-12">

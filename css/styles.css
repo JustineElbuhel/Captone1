@@ -11,19 +11,9 @@ font-family: "prata" ;
 height: 100%;
 }
 
-.nav-link-custom:hover {
-    font-weight: bold;
-    background-image: url('assets/images/link-hover-icon.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    }
-    .checkout-body {
-            background-image: url("assets/images/plant-line.jpg");
-            background-position-y: -3%;
-            background-position-x: 53%;
-            width: 100%;
-            height: auto;
-        }
+.account {
+    list-style-type: none;
+}
 
 /* INDEX */
 .hero-bg {
@@ -64,14 +54,12 @@ padding: 2rem;
 
 .hero-text1 {
 color: #f5dfb5;
-font-size: auto;
 
 }
 
 .text-2 {
 color:#3F2A2B;
 margin-top: auto;
-font-size: auto;
 }
 
 .hero-btn {
@@ -108,6 +96,11 @@ margin: 1rem;
     object-fit:fill;
 }
 /* NAVBAR */
+.nav-title {
+    font-weight: bold;
+    font-size: xx-large;
+    color: #f5dfb5;
+}
 .navbar-custom {
 background-color: #84B082 !important;
 }
@@ -130,8 +123,8 @@ align-content: center;
 position: relative;
 }
 .button-custom, .button-custom:hover {
-background-color: #84B082;
-color:#3F2A2B; 
+background-color: #84B082 !important;
+color:#3F2A2B !important; 
 }
 
 .button-custom:hover {
@@ -147,6 +140,11 @@ background: linear-gradient(#3F2A2B, #84B082);
 .link-button {
 text-decoration: underline !important;
 color: #9d5220 !important;
+}
+
+.button-customb {
+    background-color: #3F2A2B;
+    color: #f0f0f0;
 }
 
 /* REGISTRATION */
@@ -198,5 +196,4 @@ color: #3F2A2B;
 .navbar-custom3 {
     background-color: #3F2A2B;
     color: #f0f0f0;
-    border-color: none;
 }

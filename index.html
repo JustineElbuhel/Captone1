@@ -56,20 +56,24 @@ OCHRE          - #DB7C26
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav align-content-center">
-                    <a class="nav-link active-nav-custom nav-link-custom" aria-current="page" href="index.html">Home</a>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle nav-link-custom" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Account
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="login.html">Login</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="registration.html">Sign Up</a></li>
-                        </ul>
-                    </li>
+                <div class="navbar-nav">
+                    <a class="nav-link nav-link-custom nav-title" aria-current="page" href="index.html">Phytophiles</a>
+                    <div>
+                        <ul class="account">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link-custom" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="registration.html">Sign Up</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
                     <a class="nav-link nav-link-custom" href="products.html">Our Plants</a>
-                    <a class="nav-link nav-link-custom " href="checkout.html">Checkout</a>
+                    <a class="nav-link nav-link-custom " href="checkout.html">Checkout</a>    
                 </div>
             </div>
         </div>
@@ -87,9 +91,9 @@ OCHRE          - #DB7C26
                 <h1 class="hero-text1">Cultivate Rarity and Embrace Nature's Exclusives</h1>
                 <h4 class="text-2 fw-bold">Disocver nature's hidden gems!</h4>
             </div>
-            <button type="button" class="btn button-custom hero-btn mt-2">
-                <a href="products.html" class="shop-now">Shop Now</a>
-            </button>
+            <a href="products.html" class="btn button-custom hero-btn shop-now mt-2">
+                Shop Now
+            </a>
         </div>
     </div>
 </div>
@@ -102,6 +106,11 @@ OCHRE          - #DB7C26
                 Nestled in the vibrant heart of San Francisco, we are dedicated to meeting the diverse needs of our community through 
                 a remarkable array of rare and unusual plants. Our aspiration extends beyond simply offering these plants; we are 
                 committed to imparting the wisdom and nurturing guidance required to flourish in the art of expanding your plant collection.</p>
+            <h3 class="text-2 fw-bold">Locations</h3>
+            <ul>
+                <li>San Francisco</li>
+                <li>New locations coming soon!</li>
+            </ul>
         </div>
         <div class="col-md-3 mt-5 index-card2">
             <h3 class="text-2 fw-bold">Our Selection</h3>
@@ -109,9 +118,9 @@ OCHRE          - #DB7C26
                 Our inventory is always in flux, as we're committed to offering you the finest rare plants at their peak of health. 
                 Our primary goal is to ensure these plants remain in excellent condition, ready for your adoption. To stay updated on our restocks, 
                 subscribing to our newsletter!</p>
-                <button type="button" class="btn button-custom mt-2">
-                    <a href="registration.html" class="shop-now">Sign up</a>
-                </button>
+                <a href="registration.html" class="btn button-custom mt-2 shop-now">
+                    Sign up
+                </a>
         </div>
 <!-- LOGIN -->
         <div class="col-md-4 mb-5 mt-5">
@@ -123,12 +132,12 @@ OCHRE          - #DB7C26
                         <div class="form-outline login-outline">
                             <label class="form-label fw-bold ms-1" for="email">Username</label>
                             <input type="text" id="email" name="email" class="form-control"
-                                placeholder="Username/Email Address" required minlength="8" maxlength="20"/>
+                                placeholder="Username/Email Address" required minlength="8" maxlength="20" autocomplete="off"/>
                         </div>
     <!-- PASSWORD -->
                         <div class="form-outline login-outline">                                
                             <label class="form-label fw-bold ms-1" for="password">Password</label>
-                            <input type="password" id="password" class="form-control" placeholder="Password" required minlength="6"/>
+                            <input type="password" id="password" class="form-control" placeholder="Password" required minlength="6"  autocomplete="off"/>
                                 <div class="d-flex justify-content-between">
     
                             <a class="text-muted mt-1" href="#">Forgot password?</a>
@@ -142,15 +151,15 @@ OCHRE          - #DB7C26
                                 </label>
                         </div>
     <!-- SUBMIT -->
-                        <div type="submit" class="text-center">
-                            <input type="submit" class="button-custom2 btn " value="Sign In">
+                        <div class="text-center">
+                            <input type="submit" class="button-customb btn fw-bold " value="Sign In">
                         </div>
     <!-- REGISTER FOR NEW ACCOUNT -->
                         <div class="d-flex align-items-center justify-content-center ">
                             <p class="mb-3 me-2">Don't have an account?</p>
-                            <button type="button" class="btn fa-lg  mb-3">
-                                <a href="registration.html" class="link-button fw-bold">Sign Up</a>
-                            </button>
+                            <a href="registration.html" class="btn fa-lg  mb-3 link-button fw-bold">
+                                Sign Up
+                            </a>
                         </div>
                     </form>
                 </div>
@@ -163,7 +172,7 @@ OCHRE          - #DB7C26
     <div class="row d-flex justify-content-around">
         <div class="col-lg-4 col-md-12 col-sm-12 my-5">
 <!-- MAP -->
-            <card class="card img-custom ">
+            <div class="card img-custom ">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12620.69072696143!2d-122.4074816!3d37.7390929!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e567410f1a1%3A0x2b5087ab64f95ad4!2sFlowercraft!5e0!3m2!1sen!2sus!4v1697215986615!5m2!1sen!2sus"
                 height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="card-body">
@@ -179,7 +188,7 @@ OCHRE          - #DB7C26
                     </tr>
                 </table>
                 </div>
-            </card>
+            </div>
         </div>
 <!-- REVIEWS -->
         <div class=" col-lg-4 col-md-12 col-sm-12 mt-5 align-self-center">
