@@ -49,7 +49,7 @@ Knowledge of HTML / CSS / Bootstrap
 ## Code Highlight
 **Fixed Position**
 
-I wanted my definition to stay on the users page, even after they scroll past where it starts upon loading. by uing postion-fixed within bootstrap (as seen below in the first div tag), that element will stay in the same position when you scroll up/down on the page.
+I wanted my definition to stay on the users page, even after they scroll past where it starts upon loading. by uing postion-fixed within bootstrap (as seen below in the seond div tag), that element will stay in the same position when you scroll up/down on the page.
 
 **Code**
 
